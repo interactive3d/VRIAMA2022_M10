@@ -1,0 +1,11 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VRIA_Project/00_Piazza Elements/VRIA_Basic.unity
+    guid: 133dbd344282a214fb67d98bcd930a2b
+  m_configObjects: {}
