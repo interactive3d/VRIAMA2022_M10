@@ -124,8 +124,6 @@ public class QualityConrollerManager : MonoBehaviour
         refSlider.value = startSliderValue; // to set the starting value of the sldier
         Debug.Log("Values on the slider updated");
     }
-
-
     #endregion
 
 
