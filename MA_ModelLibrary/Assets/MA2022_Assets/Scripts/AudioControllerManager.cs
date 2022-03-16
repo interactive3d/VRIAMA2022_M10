@@ -31,6 +31,16 @@ public class AudioControllerManager : MonoBehaviour
     #endregion
 
     #region MainFunctions
+
+    private void Awake()
+    {
+        if(audioSourceGO == null)
+        {
+            Debug.Log("There is no audio source GameObject assigned. So I assign myself to it");
+            audioSourceGO = gameObject;
+        }
+    }
+
     private void Start()
     {
         isAudioMutted = false; // this will make the audio play at the start of the application
