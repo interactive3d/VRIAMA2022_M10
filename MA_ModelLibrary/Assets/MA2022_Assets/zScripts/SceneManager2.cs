@@ -12,8 +12,11 @@ public class SceneManager2 : MonoBehaviour
 
     private void Start()
     {
-        myNameLabel.text = PlayerPrefs.GetString("CurrentUserName");
-        theNewLabel.text = PlayerPrefs.GetString("CurrentUserName");
+        // myNameLabel.text = PlayerPrefs.GetString("CurrentUserName");
+        // theNewLabel.text = PlayerPrefs.GetString("CurrentUserName");
+        // theNewLabel.text = PlayerPrefs.GetString("CurrentUserName");
 
+        myNameLabel.text = GlobalSceneManager.Instance.UserName;
+        theNewLabel.text = GlobalSceneManager.Instance.UserName;
     }
 }
