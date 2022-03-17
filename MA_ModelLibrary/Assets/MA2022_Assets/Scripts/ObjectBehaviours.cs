@@ -53,12 +53,20 @@ public class ObjectBehaviours : MonoBehaviour
         }
     }
 
+    private GameObject myGO;
+
+    private void Start()
+    {
+        myGO = gameObject;
+    }
+    
 
     public void ChangeColorToRandom()
     {
         // on Cylinder
-        GameObject myGO = myObject[3];
+        // GameObject myGO = gameObject; myObject[3];
         
+
         float r = Random.Range(0f, 1f);
         float g = Random.Range(0f, 1f);
         float b = Random.Range(0f, 1f);
@@ -72,7 +80,7 @@ public class ObjectBehaviours : MonoBehaviour
     public void ChangeTransparency()
     {
         // on the sphere
-        GameObject myGO = myObject[1];
+        // GameObject myGO = myObject[1];
         
 
         // myGO.GetComponent<Renderer>().material.renderQueue = (int) UnityEngine.Rendering.RenderQueue.Transparent;
@@ -94,7 +102,7 @@ public class ObjectBehaviours : MonoBehaviour
     public void MoveTheObject()
     {
         // this wil be exectured on the capsule
-        GameObject myGO = myObject[2];
+        // GameObject myGO = myObject[2];
         
         Vector3 newPostion = new Vector3(0, 0, 2);
 
@@ -105,7 +113,7 @@ public class ObjectBehaviours : MonoBehaviour
     public void RotateTheObject()
     {
         // this will be triggered on event but if the object is CUBE
-        GameObject myGO = myObject[0];
+        // GameObject myGO = myObject[0];
         
         Vector3 newRotation = new Vector3(60f, 80f, 60f);
         iTween.RotateBy(myGO, newRotation, 2f);
