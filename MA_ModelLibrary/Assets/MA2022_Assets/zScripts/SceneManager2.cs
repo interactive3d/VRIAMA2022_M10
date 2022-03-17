@@ -18,5 +18,16 @@ public class SceneManager2 : MonoBehaviour
 
         myNameLabel.text = GlobalSceneManager.Instance.UserName;
         theNewLabel.text = GlobalSceneManager.Instance.UserName;
+
+        Invoke("ChangeValue", 5f);
+
     }
+
+    void ChangeValue()
+    {
+        GlobalSceneManager.Instance.UserName = "Marcin";
+        theNewLabel.text = GlobalSceneManager.Instance.UserName;
+    }
+
+    
 }

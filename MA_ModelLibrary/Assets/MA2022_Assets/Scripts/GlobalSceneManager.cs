@@ -42,4 +42,8 @@ public class GlobalSceneManager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+
+    // add functonality to save the preferences to the file (external file) 
+
+
 }
