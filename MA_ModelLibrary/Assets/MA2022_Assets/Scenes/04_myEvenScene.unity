@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 4597368}
   - component: {fileID: 4597367}
   - component: {fileID: 4597366}
+  - component: {fileID: 4597370}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -219,6 +220,19 @@ Transform:
   m_Father: {fileID: 131542882}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4597370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92ccb6d9eefd0f4ea7697b8b2aa4eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publisher: {fileID: 1243803729}
 --- !u!1 &46971765
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +245,7 @@ GameObject:
   - component: {fileID: 46971768}
   - component: {fileID: 46971767}
   - component: {fileID: 46971766}
+  - component: {fileID: 46971770}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -314,6 +329,19 @@ Transform:
   m_Father: {fileID: 131542882}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &46971770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46971765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92ccb6d9eefd0f4ea7697b8b2aa4eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publisher: {fileID: 1243803729}
 --- !u!1 &131542880
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +351,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 131542882}
-  - component: {fileID: 131542881}
   m_Layer: 0
   m_Name: GO_Subscibers
   m_TagString: Untagged
@@ -331,27 +358,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &131542881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131542880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebe799ef9a18494a95a726d7d11fd14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myObject:
-  - {fileID: 676377271}
-  - {fileID: 46971765}
-  - {fileID: 4597365}
-  - {fileID: 2089014334}
-  colorChanger: 1
-  rotateChanger: 1
-  moveChanger: 1
-  transparentChanger: 1
 --- !u!4 &131542882
 Transform:
   m_ObjectHideFlags: 0
@@ -382,6 +388,7 @@ GameObject:
   - component: {fileID: 676377274}
   - component: {fileID: 676377273}
   - component: {fileID: 676377272}
+  - component: {fileID: 676377276}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -465,6 +472,19 @@ Transform:
   m_Father: {fileID: 131542882}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &676377276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676377271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92ccb6d9eefd0f4ea7697b8b2aa4eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publisher: {fileID: 1243803729}
 --- !u!1 &1001381289
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +578,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243803727}
   - component: {fileID: 1243803728}
+  - component: {fileID: 1243803729}
   m_Layer: 0
   m_Name: GO_Publisher
   m_TagString: Untagged
@@ -586,11 +607,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243803726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5cc6edc27b4a8d409019bacbefb412a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1243803729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243803726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707e3a1fb863fc342aa81f8298a195ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Published:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1555453272
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +732,7 @@ GameObject:
   - component: {fileID: 2089014337}
   - component: {fileID: 2089014336}
   - component: {fileID: 2089014335}
+  - component: {fileID: 2089014339}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -780,3 +817,16 @@ Transform:
   m_Father: {fileID: 131542882}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089014339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089014334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92ccb6d9eefd0f4ea7697b8b2aa4eda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publisher: {fileID: 1243803729}

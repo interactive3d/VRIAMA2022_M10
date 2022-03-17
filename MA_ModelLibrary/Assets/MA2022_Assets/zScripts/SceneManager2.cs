@@ -16,17 +16,17 @@ public class SceneManager2 : MonoBehaviour
         // theNewLabel.text = PlayerPrefs.GetString("CurrentUserName");
         // theNewLabel.text = PlayerPrefs.GetString("CurrentUserName");
 
-        myNameLabel.text = GlobalSceneManager.Instance.UserName;
-        theNewLabel.text = GlobalSceneManager.Instance.UserName;
+        // myNameLabel.text = GlobalSceneManager.Instance.UserName;
+        // theNewLabel.text = GlobalSceneManager.Instance.UserName;
 
-        Invoke("ChangeValue", 5f);
+        // Invoke("ChangeValue", 5f);
 
     }
 
     void ChangeValue()
     {
-        GlobalSceneManager.Instance.UserName = "Marcin";
-        theNewLabel.text = GlobalSceneManager.Instance.UserName;
+        // GlobalSceneManager.Instance.UserName = "Marcin";
+        // theNewLabel.text = GlobalSceneManager.Instance.UserName;
     }
 
     
