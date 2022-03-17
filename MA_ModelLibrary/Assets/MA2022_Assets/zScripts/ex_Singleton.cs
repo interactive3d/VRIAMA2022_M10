@@ -12,6 +12,7 @@ public class ex_Singleton : MonoBehaviour
     // reference video: https://youtu.be/Y6cKPfUTrsA
     // elements to mention
     // [HideInInspector]
+    // 
 
 
     // create a structure
@@ -38,9 +39,9 @@ public class ex_Singleton : MonoBehaviour
 
     #region STORED VARIABLES
 
-    public int QualityLevelSv { get; set; };
-    public float VolumeLevelSv { get; set; };
-    public bool MuteStateSv { get; set; };
+    public int QualityLevelSv { get; set; }
+    public float VolumeLevelSv { get; set; }
+    public bool MuteStateSv { get; set; }
 
     #endregion
 
