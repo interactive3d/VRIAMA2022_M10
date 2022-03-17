@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRIA_Project/00_Piazza Elements/VRIA_Basic.unity
-    guid: 133dbd344282a214fb67d98bcd930a2b
+    path: Assets/MA2022_Assets/Scenes/01_loader.unity
+    guid: 54b2db390de548947aac2b0029e65ba1
+  - enabled: 1
+    path: Assets/MA2022_Assets/Scenes/02_model_scene.unity
+    guid: c3cd65bcfc777184dac83c36bdc78b16
   m_configObjects: {}
